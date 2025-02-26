@@ -24,7 +24,7 @@ const LiveResume = ({ formData }) => {
 
     return (
         <div className="p-5 text-white">
-            {/* Live Resume Section */}
+
             {fields.map((section) => {
                 const sectionData = formData[section.header] || [];
 
@@ -59,7 +59,7 @@ const LiveResume = ({ formData }) => {
                 );
             })}
 
-            {/* Preview Button */}
+
             <div className="mt-5">
                 <button
                     onClick={() => setShowPreview(true)}
@@ -69,7 +69,7 @@ const LiveResume = ({ formData }) => {
                 </button>
             </div>
 
-            {/* Preview Section */}
+
             {showPreview && (
                 <div className="mt-10 p-5 border-2 border-gray-400 rounded-lg">
                     <h2 className="text-4xl font-bold mb-3">Preview</h2>

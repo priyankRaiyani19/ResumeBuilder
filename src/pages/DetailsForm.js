@@ -25,7 +25,6 @@ const DetailsForm = ({ setFormData }) => {
                     required: field.required,
                 })) || [];
 
-            // Ensure new fields are structured as an array
             const updatedData = [...(getValues(section) || []), {}];
             setValue(section, updatedData);
 
@@ -93,7 +92,7 @@ const DetailsForm = ({ setFormData }) => {
                             </div>
                         ))}
 
-                        {/* Dynamic Fields */}
+                        {/* Added Fields */}
                         {dynamicFields[ele.header]?.map((element, index) => (
                             <div key={`${element.name}-${index}`} className="flex gap-5 justify-between items-center text-xl text-white">
                                 <label className="w-[40%] text-2xl font-semibold flex justify-around">
