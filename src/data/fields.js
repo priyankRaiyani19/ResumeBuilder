@@ -19,7 +19,7 @@ export const fields = [
             },
             {
                 name: "Phone",
-                type: "tel",
+                type: "number",
                 label: "Phone",
                 placeholder: "enter your phone",
                 required: (false)
