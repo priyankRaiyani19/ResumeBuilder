@@ -67,6 +67,7 @@ const DetailsForm = ({ setFormData }) => {
                                     name={element.name}
                                     control={control}
                                     defaultValue=""
+
                                     render={({ field }) =>
                                         element.type === "textarea" ? (
                                             <textarea
